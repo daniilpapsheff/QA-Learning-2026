@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "prettier": "^3.10.1"
+  },
+  "name": "qa-learnining-2026",
+  "version": "1.0.0",
+  "description": "**Daniil**\r - Терминал\r - VS Code\r - Git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node COURSE_V2\\02_Домашние-работы\\M0\\M0-04\\index.js",
+    "check": "node COURSE_V2\\02_Домашние-работы\\M0\\M0-04\\check.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniilpapsheff/QA-Learning-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/daniilpapsheff/QA-Learning-2026/issues"
+  },
+  "homepage": "https://github.com/daniilpapsheff/QA-Learning-2026#readme"
+}
