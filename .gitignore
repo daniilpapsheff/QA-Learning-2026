@@ -12,4 +12,14 @@ node_modules/
 # --- 4. Секреты и логи ---
 # Файлы с паролями и токенами.
 .env
+.env.*
+!.env.example
 *.log
+*.pem
+*.tmp
+id_rsa
+
+# результаты сборки
+dist/
+coverage/
+history.txt
