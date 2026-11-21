@@ -23,3 +23,6 @@ id_rsa
 dist/
 coverage/
 history.txt
+
+COURSE_V2/00_Мета/глоссарий.md
+COURSE_V2/00_Мета/трекер.md
