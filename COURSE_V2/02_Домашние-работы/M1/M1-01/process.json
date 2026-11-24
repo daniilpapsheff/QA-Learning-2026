@@ -1,0 +1,24 @@
+{
+  "project": "pet-cart",
+  "phases": [
+    {
+      "name": "requirements",
+      "owner": "QA + аналитик",
+      "artifact": "требования с критериями"
+    },
+    { "name": "planning", "owner": "QA", "artifact": "план проверок" },
+    { "name": "design", "owner": "QA", "artifact": "тест-кейсы и данные" },
+    {
+      "name": "environment",
+      "owner": "QA + DevOps",
+      "artifact": "стенд и доступы"
+    },
+    { "name": "execution", "owner": "QA", "artifact": "результаты прогона" },
+    { "name": "report", "owner": "QA", "artifact": "отчёт о качестве" },
+    {
+      "name": "closure",
+      "owner": "QA + владелец",
+      "artifact": "обновлённая регрессия"
+    }
+  ]
+}
