@@ -1,0 +1,10 @@
+const assert = require("node:assert/strict");
+const { subtotal } = require("./cart.js");
+assert.strictEqual(subtotal(500, 2), 1000, "цена × количество");
+assert.strictEqual(subtotal(500, 10), 5000, "допустимый максимум");
+assert.strictEqual(subtotal(0, 1), 0, "нулевая цена допустима");
+assert.throws(() => subtotal(500, 0), /BAD_QUANTITY/);
+assert.throws(() => subtotal(500, 11), /BAD_QUANTITY/);
+assert.throws(() => subtotal(500, "2"), /BAD_QUANTITY/);
+assert.throws(() => subtotal(-1, 1), /BAD_PRICE/);
+console.log("UNIT: 7 проверок пройдено");

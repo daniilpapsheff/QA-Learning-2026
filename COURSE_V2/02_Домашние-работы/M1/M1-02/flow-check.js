@@ -1,0 +1,12 @@
+const assert = require("node:assert/strict");
+const { createCart } = require("./cart.js");
+const cart = createCart({ book: 500 });
+cart.setItem("book", 1);
+cart.setItem("book", 2);
+cart.applyPromo("SAVE10");
+cart.applyPromo("SAVE10");
+const order = cart.checkout();
+assert.deepStrictEqual(order, { status: "created", total: 900 });
+const empty = createCart({ book: 500 });
+assert.throws(() => empty.checkout(), /EMPTY_CART/);
+console.log("FLOW: 2 проверки пройдено");
